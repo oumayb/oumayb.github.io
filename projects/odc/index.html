@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://oumayb.github.io//" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   Oumayma  Bounou
 
 
-  | Page not found
+  | Online Learning and Control of Dynamical Systems from Sensory Input
 
 </title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -38,7 +38,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="https://oumayb.github.io//404.html">
+<link rel="canonical" href="https://oumayb.github.io//projects/odc/">
 
 
 <!-- Dark Mode -->
@@ -131,12 +131,166 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">Online Learning and Control of Dynamical Systems from Sensory Input</h1>
+    <p class="post-description">Oumayma Bounou, Jean Ponce, Justin Carpentier</p>
   </header>
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://oumayb.github.io//">here</a>.</p>
+    <hr>
+<h4 id="abstract">Abstract</h4>
+<p>Identifying an effective model of a dynamical system from sensory data and using it for future state prediction and control is challenging. Recent data-driven algorithms based on Koopman theory are a promising approach to this problem, but they typically never update the model once it has been identified from a relatively small set of observations, thus making long-term prediction and control difficult for realistic systems, in robotics or fluid mechanics for example. This paper introduces a novel method for learning an embedding of the state space with linear dynamics from sensory data. Unlike previous approaches, the dynamics model can be updated online and thus easily applied to systems with non-linear dynamics in the original configuration space. The proposed approach is evaluated empirically on several classical dynamical systems and sensory modalities, with good performance on long-term prediction and control.</p>
+
+<center><div class="row justify-content-sm-center">
+    <div class="col-sm mt-3 mt-md-3">
+        <picture>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/simple.gif" title="example image">
+</picture>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-3">
+        <picture>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/double.gif" title="example image">
+</picture>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-3">
+        <picture>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/cartpole.gif" title="example image">
+</picture>
+
+    </div>
+</div></center>
+<div class="caption">
+    Left: Pendulum. Middle: Double pendulum. Right: Cartpole system.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/approach_offline-480x97.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/approach_offline-800x162.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/approach_offline.png" title="example image">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Approach.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/approach_online-480x100.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/approach_online-800x167.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/approach_online.png" title="example image">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Online update.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/simple-480x197.jpg"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/simple-800x328.jpg"></source>
+    
+    <source media="(max-width: 1400px)" srcset="/assets/resized/simple-1400x574.jpg"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/simple.jpg" title="example image">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Impact of online updates on the quality of the prediction for the pendulum.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/double-480x197.jpg"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/double-800x328.jpg"></source>
+    
+    <source media="(max-width: 1400px)" srcset="/assets/resized/double-1400x574.jpg"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/double.jpg" title="example image">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Impact of online updates on the quality of the prediction for the double pendulum.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/cartpole-480x197.jpg"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/cartpole-800x328.jpg"></source>
+    
+    <source media="(max-width: 1400px)" srcset="/assets/resized/cartpole-1400x574.jpg"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/cartpole.jpg" title="example image">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    Impact of online updates on the quality of the prediction for the cartpole system.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/fig_control-480x124.png"></source>
+    
+    <source media="(max-width: 800px)" srcset="/assets/resized/fig_control-800x207.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/fig_control.png" title="example image">
+</picture>
+
+    </div>
+</div>
+<div class="caption">
+    The goal is to take the cartpole system from an initial position specified with the left-most images (red) to a target position specified with the right-most image (green).
+</div>
+
+<center>
+<div class="row justify-content-sm-center">
+    <center><div class="col-sm mt-3 mt-md-0">
+        <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/resized/fig_control_2-480x186.png"></source>
+    
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/fig_control_2.png" title="example image">
+</picture>
+
+    </div></center>
+</div> </center>
+<div class="caption">
+    Generated controlled sequence.
+</div>
+
 
   </article>
 
