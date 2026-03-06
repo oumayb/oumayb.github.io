@@ -19,12 +19,10 @@ social: true  # includes social icons at the bottom of the page
 teaching: true
 ---
 
-I'm a last year PhD student in the [WILLOW project-team](https://www.di.ens.fr/willow/index.php) which is a joint team between Inria Paris, the [Department of Computer Science](https://www.di.ens.fr) of Ecole Normale Supérieure, and CNRS. I'm advised by [Justin Carpentier](https://jcarpent.github.io) and [Jean Ponce](https://www.di.ens.fr/~ponce/).  
+I'm a postdoctoral researcher at NYU, where I am working with [Yann Lecun](http://yann.lecun.com) on world models. Before that, I completed my PhD in the [WILLOW project-team](https://www.di.ens.fr/willow/index.php) which is a joint team between Inria Paris, the [Department of Computer Science](https://www.di.ens.fr) of Ecole Normale Supérieure, and CNRS, where I was advised by [Justin Carpentier](https://jcarpent.github.io) and [Jean Ponce](https://www.di.ens.fr/~ponce/).  
 Prior to that, I received an engineering degree from Télécom Paris.   
-My work focuses on learning representations of dynamical systems from sensor measurements.     
-My research interests lie in robotics and control, computer vision and machine learning. 
 
-
+My research interests lie in world models, control and optimization.  
 
 
 
