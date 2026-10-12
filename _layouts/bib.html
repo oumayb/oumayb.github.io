@@ -10,9 +10,14 @@
     <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
   {% endif %}
+  {% if entry.preview %}
+    {% if entry.pdf %}<a href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}">{% endif %}
+    <img class="preview" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}" alt="{{ entry.title }}">
+    {% if entry.pdf %}</a>{% endif %}
+  {% endif %}
   </div>
 
-  <div id="{{entry.key}}" class="col-sm-8">
+  <div id="{{entry.key}}" class="col-sm-10">
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
@@ -20,7 +25,7 @@
       <div class="author">
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
-          {% if author.last == site.scholar.last_name%}
+          {% if site.scholar.last_name contains author.last %}
             {% if site.scholar.first_name contains author.first%}
               {% assign author_is_self = true %}
             {% endif %}
@@ -47,7 +52,7 @@
                 <em>{{author.first}} {{author.last}}</em>,
               {% else %}
                 {% if coauthor_url %}
-                  <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>,
+                  <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>,
                 {% else %}
                   {{author.first}} {{author.last}},
                 {% endif %}
@@ -57,7 +62,7 @@
                 and <em>{{author.first}} {{author.last}}</em>
               {% else %}
                 {% if coauthor_url %}
-                  and <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
+                  and <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
                 {% else %}
                   and {{author.first}} {{author.last}}
                 {% endif %}
@@ -71,7 +76,7 @@
       {% if entry.type == "article" %}
         <em>{{entry.journal}}</em>
       {% elsif entry.type == "inproceedings" %}
-        <em>In {{entry.booktitle}}</em>
+        <em>{{entry.booktitle}}</em>
       {% endif %}
       {% if entry.month %}
         {{entry.month | capitalize}}
@@ -97,9 +102,9 @@
     {% endif %}
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}
-      <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+      <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
       {% else %}
-      <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+      <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Paper</a>
       {% endif %}
     {% endif %}
     {% if entry.supp %}

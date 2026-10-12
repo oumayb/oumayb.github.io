@@ -8,6 +8,14 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
 
+body {
+  font-weight: 400;
+}
+
+body, h1, h2, h3, h4, h5, h6, .btn {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -21,6 +29,18 @@ a, table.table a {
   &:hover:after :not(.nav-item.dropdown) {
     width: 100%;
   }
+}
+
+article a:not(.btn) {
+  color: var(--global-text-color);
+  text-decoration: underline;
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+.social .contact-icons a {
+  text-decoration: none;
 }
 
 blockquote {
@@ -61,7 +81,7 @@ blockquote {
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-size: 0.875rem;
     p {
       display: inline-block;
       margin: 0;
@@ -198,13 +218,31 @@ blockquote {
 
 // News
 
+.news .table-responsive {
+  max-height: 15rem;
+  overflow-y: auto;
+  padding-bottom: 2rem;
+  -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 3rem), transparent);
+  mask-image: linear-gradient(to bottom, black calc(100% - 3rem), transparent);
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--global-divider-color);
+    border-radius: 3px;
+  }
+}
+
 .news table td {
   font-size: 1rem;
+  font-weight: 400;
   color: var(--global-text-color);
 }
 
 .news table th {
   color: var(--global-text-color);
+  white-space: nowrap;
+  font-size: 1rem;
 }
 
 // Social (bottom)
@@ -409,8 +447,17 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
       .abbr {
-        height: 2rem;
+        min-height: 2rem;
         margin-bottom: 0.5rem;
+        .preview {
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          border-radius: 4px;
+          border: 1px solid var(--global-divider-color);
+          padding: 4px;
+          background-color: white;
+        }
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
@@ -429,18 +476,11 @@ footer.sticky-bottom {
         }
       }
       .title {
-        font-weight: bolder;
+        font-weight: 400;
       }
       .author {
-        a {
-          border-bottom: 1px dashed var(--global-theme-color);
-          &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
-          }
-        }
         > em {
-          border-bottom: 1px solid;
+          font-weight: bold;
           font-style: normal;
         }
       }

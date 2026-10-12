@@ -16,3 +16,87 @@
 
   - firstname: ["Carl Philipp Emanuel", "C. P. E."]
     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+
+"Goldblum":
+  - firstname: ["Micah"]
+    url: https://goldblum.github.io
+
+"Wang":
+  - firstname: ["Ying"]
+    url: https://yingwangg.github.io
+
+"Ren":
+  - firstname: ["Mengye"]
+    url: https://mengyeren.com
+
+"LeCun":
+  - firstname: ["Yann"]
+    url: http://yann.lecun.com
+
+"Toso":
+  - firstname: ["Leonardo F", "Leonardo"]
+    url: https://leotoso.github.io
+
+"Kalra":
+  - firstname: ["Nimit"]
+    url: https://nimit.io
+
+"Parthasarathy":
+  - firstname: ["Arjun"]
+    url: https://arjunparthasarathy.github.io
+
+"Agrawal":
+  - firstname: ["Rohun"]
+    url: https://rohunagrawal.github.io
+
+"Zhou":
+  - firstname: ["Gaoyue"]
+    url: https://gaoyuezhou.github.io
+
+"Anderson":
+  - firstname: ["James"]
+    url: http://www.columbia.edu/~ja3451/
+
+"Balestriero":
+  - firstname: ["Randall"]
+    url: https://randallbalestriero.github.io
+
+"Rudner":
+  - firstname: ["Tim GJ", "Tim"]
+    url: https://timrudner.com
+
+"Le Lidec":
+  - firstname: ["Quentin"]
+    url: https://quentinll.github.io
+
+"Ponce":
+  - firstname: ["Jean"]
+    url: https://www.di.ens.fr/~ponce/frindex.html
+
+"Izmailov":
+  - firstname: ["Pavel"]
+    url: https://izmailovpavel.github.io
+
+"Carpentier":
+  - firstname: ["Justin"]
+    url: https://jcarpent.github.io
+
+"Destrade":
+  - firstname: ["Matthieu"]
+    url: https://www.linkedin.com/in/matthieu-destrade-aa721b24a/
+
+"Aubry":
+  - firstname: ["Mathieu"]
+    url: https://mathieuaubry.github.io
+
+"Shen":
+  - firstname: ["Xi"]
+    url: https://xishen0220.github.io
+
+"Raverdy":
+  - firstname: ["Pierre-Guillaume"]
+    url: https://www.linkedin.com/in/pgraverdy/
+
+"Monnier":
+  - firstname: ["Tom"]
+    url: https://tmonnier.com
