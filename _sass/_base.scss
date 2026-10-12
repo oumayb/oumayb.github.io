@@ -457,6 +457,9 @@ footer.sticky-bottom {
           border: 1px solid var(--global-divider-color);
           padding: 4px;
           background-color: white;
+          @media (max-width: 575.98px) {
+            width: 45%;
+          }
         }
         abbr {
           display: inline-block;
